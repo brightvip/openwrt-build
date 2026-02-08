@@ -6,7 +6,7 @@ if [ ! -f "openwrt-version" ]; then
     exit 1
 fi
 
-VERSION=$(cat openwrt-version.txt | tr -d '[:space:]')
+VERSION=$(cat openwrt-version | tr -d '[:space:]')
 echo "Step 1: Target OpenWrt version identified: $VERSION"
 
 # 2. Install Build Dependencies
